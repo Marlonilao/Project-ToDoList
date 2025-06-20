@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: auto !important; */
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.side-bar {
+    border-right: 1px solid black;
+}
+
+body > div {
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+}
+
+h1, h2 {
+    position: relative;
+    left: 20px;
+    top: 50px;
+    width: fit-content;
+}

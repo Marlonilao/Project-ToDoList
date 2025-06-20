@@ -1,5 +1,6 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { Stats } = require("webpack");
 
 module.exports = {
     mode: "development",
@@ -33,5 +34,8 @@ module.exports = {
                 type: "asset/resource",
             },
         ],
+    },
+    stats: {
+        children: true,
     },
 };
