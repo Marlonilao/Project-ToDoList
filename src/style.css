@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* outline: auto !important; */
+    outline: auto !important;
 }
 
 body {
@@ -15,9 +15,14 @@ body {
     border-right: 1px solid black;
 }
 
-body > div {
+.side-bar {
     display: grid;
     grid-template-rows: 15% 70% 15%;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 20% 80%;
 }
 
 h1, h2 {
