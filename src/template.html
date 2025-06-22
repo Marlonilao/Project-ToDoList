@@ -7,6 +7,14 @@
 </head>
 <body>
     <div class="side-bar">
+        <dialog>
+            <form action="">
+                <label for="project-name">Project:</label>
+                <input type="text" name="project-name" id="project-name">
+
+                <button id="add-project">Submit</button>
+            </form>
+        </dialog>
         <div>
             <h1>Projects</h1>
         </div>
@@ -16,19 +24,15 @@
             </ul>
         </div>
         <div>
-            <button>Add Project</button>
+            <button id="openProjectDialog">Add Project</button>
         </div>
     </div>
+    
     <div class="main">
         <div>
-            <h2>Personal</h2>
+            <h2></h2>
         </div>
         <div>
-            <form action="">
-                <input type="text" name="textInput" placeholder="What do you need to do?">
-                <button>Add</button>
-            </form>
-
             <ul id="tasks">
 
             </ul>

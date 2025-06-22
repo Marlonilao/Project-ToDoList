@@ -7,25 +7,36 @@
 <script defer src="main.js"></script></head>
 <body>
     <div class="side-bar">
-        <h1>Projects</h1>
+        <dialog>
+            <form action="">
+                <label for="project-name">Project:</label>
+                <input type="text" name="project-name" id="project-name">
+
+                <button id="add-project">Submit</button>
+            </form>
+        </dialog>
         <div>
-            <ul>
-                <li>Personal</li>
-                <li>Work</li>
-                <li>Non-urgent</li>
+            <h1>Projects</h1>
+        </div>
+        <div>
+            <ul id="projects">
+
             </ul>
         </div>
-        <button>Add Project</button>
+        <div>
+            <button id="openProjectDialog">Add Project</button>
+        </div>
     </div>
+    
     <div class="main">
-        <h2></h2>
-        <ul>
-            <li>Buy Food</li>
-            <li>Clean House</li>
-            <li>Exercise</li>
-            <li>Study</li>
-        </ul>
-        <button>Add Task</button>
+        <div>
+            <h2></h2>
+        </div>
+        <div>
+            <ul id="tasks">
+
+            </ul>
+        </div>
     </div>
 
 </body>
