@@ -1,6 +1,7 @@
 export default class TaskDomHandler {
-    constructor(element) {
-        this.element = element;
+    constructor(element1, element2,) {
+        this.h2 = element1;
+        this.ul = element2;
     }
     
 }

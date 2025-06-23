@@ -6,6 +6,8 @@ import DOMhandler from "./domHandler.js";
 
 const projectList = document.getElementById('projects');
 const dialogProject = document.querySelector('.side-bar > dialog');
+const h2 = document.querySelector('.main');
+const taskList = document.getElementById('tasks');
 
 const openProjectDialogBtn = document.getElementById('openProjectDialog');
 openProjectDialogBtn.addEventListener('click' , () => {
@@ -16,7 +18,7 @@ const addProjectNameBtn = document.getElementById('add-project')
 
 
 const projectsClass = new ProjectsClass();
-const domHandler = new DOMhandler(projectList);
+const domHandler = new DOMhandler(projectList,h2,taskList);
 
 
 
@@ -27,4 +29,8 @@ addProjectNameBtn.addEventListener('click',(e) => {
     dialogProject.close();
     document.querySelector('dialog form').reset();
 })
+
+
+
+
 
