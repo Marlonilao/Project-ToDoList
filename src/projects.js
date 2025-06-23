@@ -4,29 +4,23 @@ export default class ProjectsClass {
         this.projects = [];
     }
 
-        
-    // static createLiElement(project){
-    //     const li = document.createElement('li');
-    //     li.textContent = project.name;
-    //     return li;
-    // }
-
-    // update() {
-    //     while(this.listElement.firstChild) {
-    //         this.listElement.removeChild(this.listElement.firstChild)
-    //     }
-
-    //     this.projects.forEach(project => {
-    //         this.listElement.appendChild(ProjectsClass.createLiElement(project))
-    //     })
-    // }
-
     addProject(projectName) {
-        this.projects.push({name: projectName});
+        this.projects.push({name: projectName, tasks: []});
     }
 
     getProjects() {
         return this.projects;
     }
 
+    addTaskToProject(index, task) {
+        this.projects[index].tasks.push(task);
+    }
+
+    removeProject(projectName) {
+        this.projects.splice(this.projects.indexOf(projectName), 1);
+    }
+
+    removeTask(index, task) {
+        this.projects[index].tasks.splice(this.projects[index].tasks.indexOf(task), 1);
+    }
 };

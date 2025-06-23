@@ -25,5 +25,6 @@ addProjectNameBtn.addEventListener('click',(e) => {
     projectsClass.addProject(domHandler.getProjectNameInput())
     domHandler.renderProjects(projectsClass.getProjects());
     dialogProject.close();
+    document.querySelector('dialog form').reset();
 })
 

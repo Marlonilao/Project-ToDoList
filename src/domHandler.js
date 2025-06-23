@@ -7,7 +7,9 @@ export default class DOMhandler {
         this.element.innerHTML = '';
         projects.forEach(project => {
             const li = document.createElement('li');
-            li.textContent = project.name;
+            const a = document.createElement('a');
+            a.textContent = project.name;
+            li.appendChild(a);
             this.element.appendChild(li);
         });
 
@@ -15,5 +17,5 @@ export default class DOMhandler {
 
     getProjectNameInput() {
         return document.getElementById('project-name').value;
-  }
+    }
 }
