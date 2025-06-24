@@ -4,10 +4,10 @@ import DOMhandler from "./domHandler.js";
 
 
 
-const projectList = document.getElementById('projects');
+const projectList = document.querySelector('body div > .projects');
 const dialogProject = document.querySelector('.side-bar > dialog');
-const h2 = document.querySelector('.main');
-const taskList = document.getElementById('tasks');
+const h2 = document.querySelector('.main h2');
+const taskList = document.querySelector('body > div.main .tasks');
 
 const openProjectDialogBtn = document.getElementById('openProjectDialog');
 openProjectDialogBtn.addEventListener('click' , () => {
@@ -29,6 +29,10 @@ addProjectNameBtn.addEventListener('click',(e) => {
     dialogProject.close();
     document.querySelector('dialog form').reset();
 })
+
+// TRY INTEGRATING LOCAL STORAGE IN THIS PROJECT INSTEAD OF ARRAYS!
+
+
 
 
 
